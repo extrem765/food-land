@@ -1,46 +1,52 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram } from 'lucide-react';
+import './Header.scss';
 
 export default function Header() {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto px-8 py-6">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold italic">
+    <header className="header">
+      <div className="header__container">
+        <div className="header__content">
+          {/* Логотип */}
+          <div className="header__logo text-2xl font-bold italic">
             Foodieland
           </div>
 
-          <nav className="flex items-center space-x-12">
-            <a href="#" className="text-gray-800 hover:text-gray-600 font-medium">
-              Home
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
-              Recipes
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
-              Blog
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
-              Contact
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
-              About us
-            </a>
+          {/* Меню */}
+          <nav className="header__menu">
+            <ul className="header__menu-list">
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">Home</a>
+              </li>
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">Recipes</a>
+              </li>
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">Blog</a>
+              </li>
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">Contact</a>
+              </li>
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">About us</a>
+              </li>
+            </ul>
           </nav>
 
-          <div className="flex items-center space-x-6">
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+          {/* Соцмережі */}
+          <div className="header__socials">
+            <a href="#" className="header__social-link">
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="header__social-link">
               <Twitter className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-800 hover:text-gray-600">
+            <a href="#" className="header__social-link">
               <Instagram className="w-5 h-5" />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
