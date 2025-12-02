@@ -8,6 +8,12 @@
 
   --border: var(--border-width-m) solid var(--color-accent);
 
+  --gradient :liner-gradient(
+    180deg,
+    rgba(231, 249, 253, 0.00) 0%,
+    #fE7F9FD 100%
+  );
+
   --border-width-xl: 6px;
   --border-width-l: 4px;
   --border-width-m: 3px;

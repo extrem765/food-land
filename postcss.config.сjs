@@ -1,0 +1,8 @@
+// C:\food land\postcss.config.js (Перехід на CommonJS)
+// C:\food land\postcss.config.cjs
+module.exports = {
+  plugins: [
+    require('@tailwindcss/postcss'),
+    require('autoprefixer'),
+  ],
+};
