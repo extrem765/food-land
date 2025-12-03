@@ -1,16 +1,30 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+├── public/               # Статичні файли, що не обробляються збірником
+├── src/
+│   ├── assets/           # Зображення, іконки, фавіконки та шрифти
+│   │   ├── favicons/     # Фавіконки для сайту
+│   │   ├── fonts/        # Підключувані шрифти (woff2 тощо)
+│   │   ├── icons/        # SVG-іконки (для спрайту)
+│   │   └── images/       # Інші зображення
+│   │
+│   ├── components/       # Дрібні компоненти для повторного використання (Button, Input тощо)
+│   ├── constants/        # Константи, enum'и, конфіги, словники тощо
+│   ├── layouts/          # Структурні компоненти сторінки (Header, Content, Section, Footer)
+│   ├── modules/          # JavaScript-модулі (наприклад: OverlayMenu, InputMaskCollection)
+│   ├── pages/            # Файли сторінок (Minista сам роутить все звідси)
+│   ├── sections/         # Секції сторінок для повторного використання (Hero, About, Features тощо)
+│   ├── styles/           # Загальні стилі проєкту (змінні, міксини, скидання)
+│   ├── utils/            # Утилітарні функції (наприклад: pxToRem, debounce)
+│   ├── global.jsx        # Загальний layout для всіх сторінок (Minista Feature)
+│   └── main.js           # Точка входу JavaScript-логіки, що запускається в браузері
+│
+├── .gitignore             # Список файлів та папок, що ігноруються Git
+├── .prettierignore        # Список файлів та папок, що ігноруються Prettier
+├── eslint.config.js       # Конфігурація ESLint (перевірка JS/JSX-коду)
+├── jsconfig.json          # Налаштування шляхів та автодоповнення для JS (використовується IDE та збірником)
+├── minista.config.js      # Конфігурація Minista
+├── package.json           # Залежності проєкту, скрипти, метаінформація
+├── package-lock.json      # Зафіксовані версії всіх встановлених пакетів
+├── postcss.config.js      # Конфігурація PostCSS (preset-env, pxtorem тощо)
+├── prettier.config.js     # Налаштування автоформатування коду (Prettier)
+├── README.md              # Документація по проєкту (ви зараз її читаєте)
+└── stylelint.config.js    # Конфігурація Stylelint (перевірка CSS/SCSS)
