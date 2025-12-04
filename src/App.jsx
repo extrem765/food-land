@@ -5,7 +5,8 @@ import Categories from "./components/Categories/Categories";
 import Recipes from './components/Recipes/Recipes';
 import Chefsection from './components/Chefsection/Chefsection';
 import Instagramsection from './components/Instagramsection/Instagramsection';
-
+import Deliciousrecipe from './components/Deliciousrecipe/Deliciousrecipe';
+import Footer from './components/footer/footer';
 import "./App.css";
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <Recipes />
       <Chefsection />
      <Instagramsection />
+     <Deliciousrecipe />
+     <Footer />
 
     </>
   );
