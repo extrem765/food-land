@@ -1,0 +1,148 @@
+.chef-section {
+  padding: 80px 20px;
+  background: transparent;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background: transparent;
+    padding: 0;
+    position: relative;
+
+    @media (max-width: 968px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  // Text Content
+  &__text {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    background: #000;
+    color: white;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #333;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  // Image Wrapper
+  &__image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: transparent;
+    padding: 0;
+
+    @media (max-width: 968px) {
+      min-height: 400px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  // Floating Food Icons
+  &__floating-icon {
+    position: absolute;
+    font-size: 60px;
+    animation: float 3s ease-in-out infinite;
+    z-index: 2;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+
+    &--meat {
+      top: 8%;
+      left: 8%;
+      animation-delay: 0s;
+    }
+
+    &--tomato {
+      bottom: 25%;
+      left: 5%;
+      animation-delay: 0.5s;
+    }
+
+    &--apple {
+      top: 12%;
+      right: 12%;
+      animation-delay: 1s;
+    }
+
+    &--lettuce {
+      top: 30%;
+      right: 8%;
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+// Float Animation
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .chef-section {
+    padding: 40px 15px;
+
+    &__floating-icon {
+      font-size: 40px;
+    }
+  }
+}

@@ -67,6 +67,14 @@ export default function Recipes() {
       category: 'Noodles',
       image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop',
       liked: false
+    },
+    {
+      id: 9,
+      title: 'Classic Homemade Pizza Margherita',
+      time: '25 Minutes',
+      category: 'Italian',
+      image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop',
+      liked: false
     }
   ];
 
